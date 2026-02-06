@@ -1132,11 +1132,13 @@ ul {
         grid-template-columns: 1fr;
     }
 }
+
 /* Contact Page Specific Styles */
 
 /* Page Hero Generic */
 .page-hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/hero2.png'); /* Fallback/Default image */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/hero2.png');
+    /* Fallback/Default image */
     background-size: cover;
     background-position: center;
     height: 300px;
@@ -1148,6 +1150,12 @@ ul {
 .contact-hero {
     /* You can use a specific contact image here if available */
     background-position: center bottom;
+}
+
+.about-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/hero1.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .page-hero-content {
@@ -1181,7 +1189,7 @@ ul {
     background: #fff;
     padding: 40px;
     border-radius: 15px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
 }
 
 .form-title {
@@ -1277,7 +1285,7 @@ ul {
     right: -50px;
     width: 150px;
     height: 150px;
-    background: rgba(255,255,255,0.05);
+    background: rgba(255, 255, 255, 0.05);
     border-radius: 50%;
 }
 
@@ -1300,7 +1308,7 @@ ul {
 .info-item .icon-box {
     width: 45px;
     height: 45px;
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1316,8 +1324,9 @@ ul {
     font-weight: 600;
 }
 
-.info-item p, .info-item a {
-    color: rgba(255,255,255,0.8);
+.info-item p,
+.info-item a {
+    color: rgba(255, 255, 255, 0.8);
     font-size: 14px;
     line-height: 1.5;
 }
@@ -1362,10 +1371,12 @@ ul {
 
 /* Map */
 .map-section {
-    margin-top: -50px; /* Overlap effect if desired, or just regular spacing */
+    margin-top: -50px;
+    /* Overlap effect if desired, or just regular spacing */
     z-index: 1;
     position: relative;
-    filter: grayscale(100%); /* Optional: makes map standard and blend better */
+    filter: grayscale(100%);
+    /* Optional: makes map standard and blend better */
     transition: filter 0.3s;
 }
 
