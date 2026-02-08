@@ -43,11 +43,14 @@
 body {
     background-color: var(--bg-light);
     color: var(--text-dark);
-    /* Aesthetic Overlay: Subtle Dot Pattern */
-    background-image: radial-gradient(#0a192f 0.5px, transparent 0.5px), radial-gradient(#0a192f 0.5px, var(--bg-light) 0.5px);
-    background-size: 20px 20px;
-    background-position: 0 0, 10px 10px;
-    opacity: 1;
+    /* Elevator Aesthetic: Platinum Gradient + Tech Grid */
+    background-image:
+        linear-gradient(rgba(10, 25, 47, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(10, 25, 47, 0.03) 1px, transparent 1px),
+        linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background-size: 50px 50px, 50px 50px, 100% 100%;
+    background-attachment: fixed;
+    /* Parallax feel */
 }
 
 .container {
