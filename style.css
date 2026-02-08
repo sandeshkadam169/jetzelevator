@@ -9,8 +9,8 @@
     /* Darker Orange */
     --secondary-darker: #050f1e;
     /* Deepest Navy/Black */
-    --accent-tech: #00e5ff;
-    /* High-Tech Cyan/Teal */
+    --accent-tech: #cfd8dc;
+    /* Platinum/Silver */
 
     /* Corporate Light Theme */
     --bg-light: #f8f9fa;
@@ -84,13 +84,13 @@ ul {
 .enhanced-safety-section,
 .product-showcase-section,
 .advanced-features-section {
-    background: linear-gradient(135deg, #0a192f 0%, #004d40 100%);
-    /* Deep Navy to Deep Teal */
+    background: linear-gradient(135deg, #0a192f 0%, #1c2a38 100%);
+    /* Deep Navy to Charcoal/Steel */
     position: relative;
     overflow: hidden;
 }
 
-/* Teal Glow Overlay */
+/* Silver Glow Overlay */
 .bg-dark-blue::before,
 .enhanced-safety-section::before,
 .product-showcase-section::before,
@@ -101,7 +101,7 @@ ul {
     right: -50%;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle, rgba(0, 229, 255, 0.05), transparent 70%);
+    background: radial-gradient(circle, rgba(207, 216, 220, 0.05), transparent 70%);
     pointer-events: none;
 }
 
@@ -776,8 +776,8 @@ ul {
     padding: 40px 30px;
     border-radius: 4px;
     /* Sharper, industrial corners */
-    box-shadow: 0 10px 30px rgba(0, 229, 255, 0.05), inset 0 0 0 1px rgba(255, 255, 255, 0.5);
-    /* Multi-layered shadow for depth + Teal Tint */
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.05), inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+    /* Multi-layered shadow for depth + Silver/White Tint */
     transition: all 0.3s ease;
     border: 1px solid rgba(10, 25, 47, 0.1);
     /* Subtle Navy Border */
