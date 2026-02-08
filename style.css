@@ -115,7 +115,11 @@ ul {
 }
 
 /* 3. Brushed Metal Typography */
-.main-heading {
+.main-heading,
+.form-title,
+.info-title,
+.about-hero h1,
+.page-hero h1 {
     font-weight: 800;
     letter-spacing: 1px;
     padding-bottom: 20px;
@@ -129,8 +133,21 @@ ul {
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
 }
 
+/* 3b. Light Brushed Metal (For Dark Backgrounds) */
+.page-hero h1,
+.enhanced-safety-section .main-heading,
+.bg-dark-blue .main-heading {
+    background: linear-gradient(to bottom, #ffffff, #b0bec5, #ffffff);
+    /* Silver/Steel */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent !important;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
 /* Decorative line under headings */
-.main-heading::after {
+.main-heading::after,
+.page-hero h1::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -728,7 +745,12 @@ ul {
     gap: 30px;
 }
 
-.feature-card {
+/* High-Impact "Glass & Steel" Card - Shared Style */
+.feature-card,
+.program-card,
+.contact-form-wrapper,
+.info-card,
+.about-card {
     /* High-Impact "Glass & Steel" Card */
     background: linear-gradient(135deg, #ffffff 0%, #f4f6f8 100%);
     padding: 40px 30px;
@@ -736,7 +758,6 @@ ul {
     /* Sharper, industrial corners */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.5);
     /* Multi-layered shadow for depth */
-    text-align: center;
     transition: all 0.3s ease;
     border: 1px solid rgba(10, 25, 47, 0.1);
     /* Subtle Navy Border */
@@ -747,8 +768,12 @@ ul {
     overflow: hidden;
 }
 
-/* Metallic Sheen on Hover */
-.feature-card::before {
+/* Metallic Sheen on Hover - Shared */
+.feature-card::before,
+.program-card::before,
+.contact-form-wrapper::before,
+.info-card::before,
+.about-card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -759,15 +784,28 @@ ul {
     transform: skewX(-25deg);
     transition: 0.5s;
     pointer-events: none;
+    z-index: 2;
 }
 
-.feature-card:hover::before {
+.feature-card:hover::before,
+.program-card:hover::before,
+.contact-form-wrapper:hover::before,
+.info-card:hover::before,
+.about-card:hover::before {
     left: 150%;
 }
 
-.feature-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+.feature-card:hover,
+.program-card:hover,
+.contact-form-wrapper:hover,
+.info-card:hover,
+.about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.feature-card {
+    text-align: center;
     border-bottom: 4px solid var(--secondary-color);
 }
 
