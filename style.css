@@ -1,27 +1,36 @@
 /* Reset and Base Styles */
 :root {
-    --primary-color: #4e342e;
-    /* Dark Brown */
+    /* Brio-Style Navy & Orange Theme */
+    --primary-color: #0a192f;
+    /* Dark Navy Blue */
     --secondary-color: #ff9800;
-    /* Orange */
+    /* Vibrant Orange (Unchanged) */
     --secondary-dark: #e65100;
     /* Darker Orange */
-    --secondary-darker: #3e2723;
-    /* Deep Brown */
+    --secondary-darker: #050f1e;
+    /* Deepest Navy/Black */
 
-    --text-dark: #3e2723;
-    /* Deep Brown instead of black */
-    --text-light: #5d4037;
-    /* Medium Brown instead of gray */
+    /* Corporate Light Theme */
+    --bg-light: #f8f9fa;
+    /* Cool Light Grey/White */
+    --bg-card: #ffffff;
+    /* White Cards */
+    --text-dark: #112240;
+    /* Dark Navy Text */
+    --text-light: #48566d;
+    /* Slate Grey Text */
     --white: #fff;
-    --bg-light: #fbf8f5;
-    /* Warm Off-White */
 
-    /* New Brand Backgrounds */
-    --bg-warm-light: #fff8e1;
-    /* Very light amber */
-    --bg-brand-fade: #fff3e0;
-    /* Light orange tint */
+    /* Backgrounds */
+    --bg-warm-light: #ffffff;
+    /* Pure White */
+    --bg-brand-fade: #e3f2fd;
+    /* Very Light Blue Tint */
+
+    --glass-bg: rgba(255, 255, 255, 0.95);
+    /* White Glass */
+    --glass-border: rgba(10, 25, 47, 0.1);
+    /* Navy Border */
 }
 
 * {
@@ -62,11 +71,11 @@ ul {
 .enhanced-safety-section,
 .product-showcase-section,
 .advanced-features-section {
-    background: linear-gradient(135deg, var(--primary-color) 0%, #2d1b18 100%);
+    background: linear-gradient(135deg, var(--primary-color) 0%, #112240 100%);
 }
 
 .tech-dark-section {
-    background: linear-gradient(135deg, #3e2723 0%, #1a100e 100%);
+    background: linear-gradient(135deg, #0a192f 0%, #050f1e 100%);
 }
 
 /* 2. Enhanced Card Shadows & Transitions */
@@ -1531,13 +1540,12 @@ ul {
 .form-group textarea {
     width: 100%;
     padding: 12px 15px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(10, 25, 47, 0.15);
     border-radius: 8px;
     font-size: 15px;
     transition: all 0.3s;
-    background: rgba(255, 255, 255, 0.05);
-    /* Dark input */
-    color: white;
+    background: #fff;
+    color: var(--text-dark);
 }
 
 .form-group input:focus,
@@ -1561,14 +1569,37 @@ ul {
    ========================================= */
 
 :root {
-    --primary-color: #4e342e;
+    /* Brio-Style Navy & Orange Theme */
+    --primary-color: #0a192f;
+    /* Dark Navy Blue */
     --secondary-color: #ff9800;
-    --orange-gradient: linear-gradient(135deg, #ff9800 0%, #ff5722 100%);
-    /* Vibrant Orange */
-    --white-bg-gradient: linear-gradient(180deg, #ffffff 0%, #fff8e1 100%);
-    /* Warm White */
-    --card-shadow: 0 10px 30px rgba(255, 152, 0, 0.15);
-    /* Orange-tinted shadow */
+    /* Vibrant Orange (Unchanged) */
+    --secondary-dark: #e65100;
+    /* Darker Orange */
+    --secondary-darker: #050f1e;
+    /* Deepest Navy/Black */
+
+    /* Corporate Light Theme */
+    --bg-light: #f8f9fa;
+    /* Cool Light Grey/White */
+    --bg-card: #ffffff;
+    /* White Cards */
+    --text-dark: #112240;
+    /* Dark Navy Text */
+    --text-light: #48566d;
+    /* Slate Grey Text */
+    --white: #fff;
+
+    /* Backgrounds */
+    --bg-warm-light: #ffffff;
+    /* Pure White */
+    --bg-brand-fade: #e3f2fd;
+    /* Very Light Blue Tint */
+
+    --glass-bg: rgba(255, 255, 255, 0.95);
+    /* White Glass */
+    --glass-border: rgba(10, 25, 47, 0.1);
+    /* Navy Border */
 }
 
 /* 1. Global Vibrant Orange Accents */
@@ -1618,7 +1649,7 @@ ul {
     font-weight: 600;
     padding: 15px;
     text-align: center;
-    border-top: 1px solid #ffe0b2;
+    border-top: 1px solid #e3f2fd;
 }
 
 .play-button-overlay {
@@ -1682,7 +1713,7 @@ ul {
 
 /* Product Showcase - Keeping Dark but adding Orange Pop */
 .product-showcase-section {
-    background: radial-gradient(circle at center, #5d4037 0%, #3e2723 100%);
+    background: radial-gradient(circle at center, #112240 0%, #0a192f 100%);
 }
 
 .showcase-overlay {
@@ -1771,8 +1802,8 @@ ul {
 .review-card.active {
     animation: floatCard 4s ease-in-out infinite;
     border: 2px solid var(--secondary-color);
-    background: #fff3e0;
-    /* Light Orange Tint */
+    background: #e3f2fd;
+    /* Light Blue Tint */
 }
 
 .review-card.active .review-text {
@@ -1840,10 +1871,10 @@ ul {
 
 /* 6. Partner Section Refinement */
 .partners-section {
-    background: var(--secondary-color);
-    /* Vibrant Orange Background */
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background: var(--primary-color);
+    /* Navy Blue Background */
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .partner-logo {
@@ -1869,10 +1900,10 @@ ul {
 }
 
 .bento-cream {
-    background: #fff8e1;
-    /* Soft Cream */
-    color: #4e342e !important;
-    border: 1px solid rgba(255, 152, 0, 0.1);
+    background: #f1f8e9;
+    /* Light Cool Green/Grey */
+    color: var(--text-dark) !important;
+    border: 1px solid rgba(10, 25, 47, 0.1);
 }
 
 .bento-white {
@@ -2370,7 +2401,7 @@ ul {
     color: white;
     padding: 40px 30px;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(78, 52, 46, 0.3);
+    box-shadow: 0 10px 30px rgba(10, 25, 47, 0.3);
     position: relative;
     overflow: hidden;
 }
